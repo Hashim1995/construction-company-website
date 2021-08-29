@@ -1,43 +1,65 @@
 import React from "react";
+import { logoImg } from "../../assets/img/imageList.js";
 
 import { Menu } from "antd";
 import {
-  MailOutlined,
+  HomeOutlined,
   AppstoreOutlined,
-  SettingOutlined,
+  TeamOutlined,
+  PhoneOutlined,
 } from "@ant-design/icons";
 
 const Nav = () => {
-  const [current, setCurrent] = React.useState("mail");
-  const { SubMenu } = Menu;
+  const handleClick = (e) => {
+    console.log("click ", e);
+  };
 
-  const currentA = current;
   return (
-    <Menu selectedKeys={currentA} mode="horizontal">
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Navigation One
+    <Menu className="navMenu" onClick={handleClick} mode="horizontal">
+      <Menu.Item className="navMenuItem">
+        <img style={{ height: "100px" }} src={logoImg} alt="company logo" />
+        Your Company
       </Menu.Item>
-      <Menu.Item key="app" disabled icon={<AppstoreOutlined />}>
-        Navigation Two
-      </Menu.Item>
-      <SubMenu
-        key="SubMenu"
-        icon={<SettingOutlined />}
-        title="Navigation Three - Submenu"
+
+      <Menu.Item
+        className="navMenuItem"
+        icon={
+          <HomeOutlined
+            style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
+          />
+        }
       >
-        <Menu.ItemGroup title="Item 1">
-          <Menu.Item key="setting:1">Option 1</Menu.Item>
-          <Menu.Item key="setting:2">Option 2</Menu.Item>
-        </Menu.ItemGroup>
-        <Menu.ItemGroup title="Item 2">
-          <Menu.Item key="setting:3">Option 3</Menu.Item>
-          <Menu.Item key="setting:4">Option 4</Menu.Item>
-        </Menu.ItemGroup>
-      </SubMenu>
-      <Menu.Item key="alipay">
-        <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-          Navigation Four - Link
-        </a>
+        HOME
+      </Menu.Item>
+      <Menu.Item
+        className="navMenuItem"
+        icon={
+          <AppstoreOutlined
+            style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
+          />
+        }
+      >
+        PORTFOLIO
+      </Menu.Item>
+      <Menu.Item
+        className="navMenuItem"
+        icon={
+          <TeamOutlined
+            style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
+          />
+        }
+      >
+        ABOUT US
+      </Menu.Item>
+      <Menu.Item
+        className="navMenuItem"
+        icon={
+          <PhoneOutlined
+            style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
+          />
+        }
+      >
+        CONTACT
       </Menu.Item>
     </Menu>
   );

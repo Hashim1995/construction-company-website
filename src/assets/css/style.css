@@ -1,0 +1,94 @@
+:root {
+  --main-color: #ffbc13;
+  --main-color-opacity: #ffbc1359;
+  --black: rgb(17, 16, 16);
+  --black-opacity: rgba(17, 16, 16, 0.575);
+  --white: white;
+}
+body {
+  background-color: antiquewhite;
+}
+.navBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: var(--black-opacity);
+  padding: 1em;
+}
+.navMenu {
+  background-color: transparent;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navMenuItem:first-child {
+  order: -1 !important;
+}
+.navMenuItem {
+  color: var(--white);
+  font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
+}
+.navMenuItem:hover {
+  color: --white !important;
+}
+
+.navMenuItem:hover .navMenuItem::after {
+  border-bottom: 2px solid --white !important;
+}
+
+.navMenu .ant-menu-item-active:hover {
+  color: white !important;
+  border: none !important;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: white !important;
+  border: none !important;
+}
+
+.headerCarousel .slick-dots-bottom {
+  bottom: 10vh;
+}
+.headerCarousel .slick-dots-bottom button {
+  background-color: var(--main-color) !important;
+  height: 15px;
+  border: 1px solid var(--black-opacity);
+  border-radius: 8px;
+}
+
+.headerCarouselInnerWrap {
+  position: relative;
+}
+.headerCarouselInnerWrap h3,
+.headerCarouselInnerWrap h4,
+.headerCarouselInnerWrap h5 {
+  position: absolute;
+  padding: 0.5rem 3rem;
+  z-index: 2;
+  color: var(--black);
+  margin: 2em 0;
+}
+
+.headerCarouselInnerWrap h3 {
+  font-size: clamp(1rem, -0.875rem + 3.5vw, 8vw);
+  top: 15vh;
+  background-color: var(--main-color);
+}
+.headerCarouselInnerWrap h4 {
+  font-size: clamp(1rem, -0.875rem + 2.8vw, 8vw);
+  top: 35vh;
+  background-color: var(--main-color);
+}
+
+.headerCarouselInnerWrap h5 {
+  font-size: clamp(1rem, -0.875rem + 2vw, 8vw);
+  top: 50vh;
+  background-color: var(--main-color);
+}
