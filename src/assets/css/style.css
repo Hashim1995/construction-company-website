@@ -1,3 +1,4 @@
+/************************************* Root /*************************************/
 :root {
   --main-color: #ffbc13;
   --main-color-opacity: #ffbc1359;
@@ -6,9 +7,13 @@
   --white: white;
   --title-size: clamp(1rem, -0.875rem + 2.4vw, 3.5rem);
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   background-color: antiquewhite;
+  font-family: "Roboto", sans-serif;
 }
+/************************************* Root /*************************************/
+/************************************* NAVBAR /*************************************/
 .navBackground {
   position: absolute;
   top: 0;
@@ -53,7 +58,8 @@ body {
   color: white !important;
   border: none !important;
 }
-
+/************************************* NAVBAR /*************************************/
+/************************************* CAROUSEL /*************************************/
 .headerCarousel .slick-dots-bottom {
   bottom: 10vh;
 }
@@ -93,7 +99,55 @@ body {
   top: 50vh;
   background-color: var(--main-color);
 }
+/************************************* CAROUSEL /*************************************/
 
+/************************************* MAIN SERVICES /*************************************/
 .mainServiceTitle span {
   font-size: var(--title-size);
 }
+
+.mainServiceWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  flex-wrap: wrap;
+}
+.mainServiceItem {
+  display: flex;
+  margin: 1em 0;
+  flex: 1 1 30%;
+}
+.mainServiceItemImgWrap {
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainServiceItemImgWrap img {
+  height: 38px;
+}
+.mainServiceTextWrap {
+  padding: 0 2em;
+}
+.mainServiceTextWrap h5 {
+  font-weight: bold;
+  padding-bottom: 0.2em;
+  text-align: left;
+  font-size: 18px;
+  margin: 0;
+}
+
+.mainServiceTextWrap p {
+  padding: 0.5em 0;
+  text-align: left;
+  font-size: 16px;
+}
+/************************************* MAIN SERVICES /*************************************/
+/************************************* WHY US /*************************************/
+.WhyUsTitle span {
+  font-size: var(--title-size);
+}
+/************************************* WHY US /*************************************/
