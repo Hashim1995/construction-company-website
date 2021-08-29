@@ -14,10 +14,42 @@ import workerOne from "./workers1.jpg";
 import workerTwo from "./workers2.jpg";
 import workerThree from "./workers3.jpg";
 import workerFour from "./workers4.jpg";
+import statbackground from "./statbackground.jpg";
+import doneProject from "./doneProject.svg";
+import planned from "./planned.svg";
+import underConstruction from "./underConstruction.svg";
+import partnerOne from "./partner1.png";
+import partnerTwo from "./partner2.png";
+import partnerThree from "./partner3.png";
+import partnerFour from "./partner4.png";
+import partnerFive from "./partner5.png";
+import partnerSix from "./partner6.png";
+import elon from "./elon.jpg";
+import jeff from "./jeff.jpg";
+import bill from "./bill.jpg";
 
 const CarouselImg = [car1, car2, car3, car4, car5];
 const ServicesIcons = [drill, home, hook, pipeline, repairman, energy];
 const logoImg = logo;
 const workersImg = [workerOne, workerTwo, workerThree, workerFour];
+const StatisticImg = [doneProject, planned, underConstruction];
+const PartnersImg = [
+  partnerOne,
+  partnerTwo,
+  partnerThree,
+  partnerFour,
+  partnerFive,
+  partnerSix,
+];
+const CustomersImg = [elon, jeff, bill];
 
-export { CarouselImg, logoImg, ServicesIcons, workersImg };
+export {
+  CarouselImg,
+  logoImg,
+  ServicesIcons,
+  workersImg,
+  statbackground,
+  StatisticImg,
+  PartnersImg,
+  CustomersImg,
+};
