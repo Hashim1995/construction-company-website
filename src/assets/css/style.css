@@ -4,6 +4,7 @@
   --black: rgb(17, 16, 16);
   --black-opacity: rgba(17, 16, 16, 0.575);
   --white: white;
+  --title-size: clamp(1rem, -0.875rem + 2.4vw, 3.5rem);
 }
 body {
   background-color: antiquewhite;
@@ -91,4 +92,8 @@ body {
   font-size: clamp(1rem, -0.875rem + 2vw, 8vw);
   top: 50vh;
   background-color: var(--main-color);
+}
+
+.mainServiceTitle span {
+  font-size: var(--title-size);
 }
