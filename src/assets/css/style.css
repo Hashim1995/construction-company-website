@@ -6,6 +6,8 @@
   --black-opacity: rgba(17, 16, 16, 0.575);
   --white: white;
   --title-size: clamp(1rem, -0.875rem + 2.4vw, 3.5rem);
+  --basic-text-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
+  --mini-title-size: clamp(1rem, -0.875rem + 1.8vw, 3.5rem);
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
@@ -136,18 +138,53 @@ body {
   font-weight: bold;
   padding-bottom: 0.2em;
   text-align: left;
-  font-size: 18px;
+  font-size: var(--mini-title-size);
   margin: 0;
 }
 
 .mainServiceTextWrap p {
   padding: 0.5em 0;
   text-align: left;
-  font-size: 16px;
+  font-size: var(--basic-text-size);
 }
 /************************************* MAIN SERVICES /*************************************/
 /************************************* WHY US /*************************************/
+.WhyUsWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .WhyUsTitle span {
   font-size: var(--title-size);
+}
+.WhyUsCollapse {
+  width: 49%;
+}
+.WhyUsWrap .ant-collapse {
+  background-color: transparent;
+  border: none;
+
+  border-radius: 6px;
+}
+
+.WhyUsCollapse .ant-collapse-header {
+  background-color: var(--main-color);
+  font-size: var(--mini-title-size);
+}
+.WhyUsCollapse .WhyUsPanel:first-of-type .ant-collapse-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.WhyUsPanel .ant-collapse-content-box p {
+  font-size: var(--basic-text-size);
+  padding: 3em 2em;
+}
+.WhyUsGallery {
+  width: 49%;
+}
+.WhyUsGallery img {
+  padding: 0.5em;
 }
 /************************************* WHY US /*************************************/
