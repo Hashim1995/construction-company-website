@@ -79,13 +79,12 @@ const Stat = () => {
                     </div>
                   )}
                 </VisibilitySensor>
-                <span className="statLabel">UNDER CONSTRUCTION 
-                PROJECTS</span>
+                <span className="statLabel">UNDER CONSTRUCTION PROJECTS</span>
               </div>
               <div className="statItem">
                 <img
                   className="statImg"
-                  src={StatisticImg[2]}
+                  src={StatisticImg[1]}
                   alt=" statistic img"
                 />
                 <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>

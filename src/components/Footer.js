@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import logo from "../assets/img/logo.png";
+import { logoImg, SocialMediaImg } from "../assets/img/imageList";
 import {
   DoubleRightOutlined,
   EnvironmentOutlined,
@@ -16,7 +16,7 @@ const Footer = () => {
           <footer className="footer">
             <div className="footerLeft">
               <h5>ABOUT US</h5>
-              <img src={logo} alt="" />
+              <img src={logoImg} alt="" />
               <p>
                 Building isn’t just a job. At the Construction Company, it is
                 our passion. With every project we undertake, we set the bar
@@ -30,35 +30,35 @@ const Footer = () => {
                 <li>
                   {" "}
                   <DoubleRightOutlined />
-                  <a href="google.com"> HOME </a>
+                  <a href="google.com"> Home </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> PORTFOLIO </a>
+                  <a href="google.com"> Portfolio </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> ABOUT US </a>
+                  <a href="google.com"> About us</a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> CONTACT </a>
+                  <a href="google.com"> Contact </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> FEEDBACK </a>
+                  <a href="google.com"> Feedback </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> SERVICES </a>
+                  <a href="google.com"> Services </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> OUR PARTNERS </a>
+                  <a href="google.com"> Our partners </a>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> STATISTIC </a>
+                  <a href="google.com"> Statistic </a>
                 </li>
               </ul>
             </div>
@@ -78,6 +78,33 @@ const Footer = () => {
                 <b>E-mail : </b>{" "}
                 <a href="mailto:contact@company.com"> contact@company.com</a>
               </p>
+              <ul>
+                <li>
+                  <a target="_blank" href="google.com">
+                    <img src={SocialMediaImg[0]} alt="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="google.com">
+                    <img src={SocialMediaImg[1]} alt="instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="google.com">
+                    <img src={SocialMediaImg[2]} alt="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="google.com">
+                    <img src={SocialMediaImg[3]} alt="youtube" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="google.com">
+                    <img src={SocialMediaImg[4]} alt="twitter" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </footer>
         </Col>

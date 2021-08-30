@@ -11,7 +11,7 @@ const Partners = () => {
       </Divider>
       <div className="partnersWrap">
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">
@@ -25,7 +25,7 @@ const Partners = () => {
           </a>
         </div>
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">
@@ -39,7 +39,7 @@ const Partners = () => {
           </a>
         </div>
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">
@@ -53,7 +53,7 @@ const Partners = () => {
           </a>
         </div>
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">
@@ -67,7 +67,7 @@ const Partners = () => {
           </a>
         </div>
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">
@@ -81,7 +81,7 @@ const Partners = () => {
           </a>
         </div>
         <div className="partnersItem">
-          <a href="google.com">
+          <a target="_blank" href="google.com">
             <div className="partners-card">
               <div className="partners-card-inner">
                 <div className="partners-card-front">

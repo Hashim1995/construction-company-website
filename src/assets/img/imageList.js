@@ -27,6 +27,11 @@ import partnerSix from "./partner6.png";
 import elon from "./elon.jpg";
 import jeff from "./jeff.jpg";
 import bill from "./bill.jpg";
+import facebook from "./facebook.svg";
+import youtube from "./youtube.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import twitter from "./twitter.svg";
 
 const CarouselImg = [car1, car2, car3, car4, car5];
 const ServicesIcons = [drill, home, hook, pipeline, repairman, energy];
@@ -42,6 +47,7 @@ const PartnersImg = [
   partnerSix,
 ];
 const CustomersImg = [elon, jeff, bill];
+const SocialMediaImg = [facebook, instagram, youtube, linkedin, twitter];
 
 export {
   CarouselImg,
@@ -52,4 +58,5 @@ export {
   StatisticImg,
   PartnersImg,
   CustomersImg,
+  SocialMediaImg,
 };
