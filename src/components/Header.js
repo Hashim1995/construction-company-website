@@ -7,7 +7,11 @@ const Header = () => {
     <>
       <Row>
         <Col className="navBackground" span={24}>
-          <Col span={16} offset={4}>
+          <Col
+            xs={{ span: 24, offset: 0 }}
+            md={{ span: 20, offset: 2 }}
+            xl={{ span: 16, offset: 4 }}
+          >
             <Nav />
           </Col>
         </Col>

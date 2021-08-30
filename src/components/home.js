@@ -13,12 +13,20 @@ const Home = () => {
       <CarouselSlider />
       <Row>
         <Col span={24}>
-          <Col span={16} offset={4}>
+          <Col
+            xs={{ span: 22, offset: 1 }}
+            md={{ span: 20, offset: 2 }}
+            xl={{ span: 16, offset: 4 }}
+          >
             <Services />
             <WhyUs />
           </Col>
           <Stat />
-          <Col span={16} offset={4}>
+          <Col
+            xs={{ span: 22, offset: 1 }}
+            md={{ span: 20, offset: 2 }}
+            xl={{ span: 16, offset: 4 }}
+          >
             <Partners />
             <Comments />
           </Col>

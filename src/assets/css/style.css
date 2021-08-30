@@ -5,6 +5,7 @@
   --black: rgb(17, 16, 16);
   --black-opacity: rgba(17, 16, 16, 0.575);
   --white: white;
+  --small-size: 13px;
   --title-size: clamp(1rem, -0.875rem + 2.4vw, 3.5rem);
   --basic-text-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
   --mini-title-size: clamp(1rem, -0.875rem + 1.8vw, 3.5rem);
@@ -30,7 +31,9 @@ body {
   background-color: transparent;
   justify-content: space-evenly;
   align-items: center;
+  border: none;
 }
+
 .navMenuItem:first-child {
   order: -1 !important;
 }
@@ -38,10 +41,14 @@ body {
   color: var(--white);
   font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
 }
+
 .navMenuItem:hover {
   color: --white !important;
 }
-
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  display: none !important;
+}
 .navMenuItem:hover .navMenuItem::after {
   border-bottom: 2px solid --white !important;
 }
@@ -68,9 +75,8 @@ body {
 }
 .headerCarousel .slick-dots-bottom button {
   background-color: var(--main-color) !important;
-  height: 15px;
-  border: 1px solid var(--black-opacity);
-  border-radius: 8px;
+  height: 25px !important;
+  border-radius: 50% !important;
 }
 
 .headerCarouselInnerWrap {
@@ -96,7 +102,9 @@ body {
   top: 35vh;
   background-color: var(--main-color);
 }
-
+.headerCarouselInnerWrap img {
+  object-fit: cover;
+}
 .headerCarouselInnerWrap h5 {
   font-size: clamp(1rem, -0.875rem + 2vw, 8vw);
   top: 50vh;
@@ -240,6 +248,7 @@ body {
   flex-direction: column;
   background-color: var(--main-color);
   border-radius: 8px;
+  flex: 0 0 30%;
 }
 .statItem > div {
   margin: 0.8em 0;
@@ -528,5 +537,8 @@ body {
 
   filter: grayscale(0);
   transform: scale(1.2);
+}
+.footerBottomDivider {
+  border-color: var(--white);
 }
 /************************************* FOOTER /*************************************/

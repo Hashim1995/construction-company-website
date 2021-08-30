@@ -6,7 +6,7 @@ import { CarouselImg } from "../../assets/img/imageList.js";
 const CarouselSlider = () => {
   const contentStyle = {
     width: "100%",
-    height: "auto",
+    height: "100vh",
     color: "#fff",
     lineHeight: "160px",
     textAlign: "center",
@@ -24,6 +24,7 @@ const CarouselSlider = () => {
             <div>
               <div className="headerCarouselInnerWrap">
                 <img
+                  className="headerCarouselimg"
                   style={contentStyle}
                   src={CarouselImg[0]}
                   alt="carousel  1"
@@ -36,6 +37,7 @@ const CarouselSlider = () => {
             <div>
               <div className="headerCarouselInnerWrap">
                 <img
+                  className="headerCarouselimg"
                   style={contentStyle}
                   src={CarouselImg[1]}
                   alt="carousel  2"
@@ -48,6 +50,7 @@ const CarouselSlider = () => {
             <div>
               <div className="headerCarouselInnerWrap">
                 <img
+                  className="headerCarouselimg"
                   style={contentStyle}
                   src={CarouselImg[2]}
                   alt="carousel  3"

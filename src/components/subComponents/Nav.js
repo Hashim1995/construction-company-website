@@ -17,12 +17,17 @@ const Nav = () => {
   return (
     <Menu className="navMenu" onClick={handleClick} mode="horizontal">
       <Menu.Item className="navMenuItem">
-        <img style={{ height: "100px" }} src={logoImg} alt="company logo" />
+        <img
+          className="navLogoImg"
+          style={{ height: "100px" }}
+          src={logoImg}
+          alt="company logo"
+        />
         Your Company
       </Menu.Item>
 
       <Menu.Item
-        className="navMenuItem"
+        className="navMenuTextItem navMenuItem"
         icon={
           <HomeOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -32,7 +37,7 @@ const Nav = () => {
         HOME
       </Menu.Item>
       <Menu.Item
-        className="navMenuItem"
+        className="navMenuTextItem navMenuItem"
         icon={
           <AppstoreOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -42,7 +47,7 @@ const Nav = () => {
         PORTFOLIO
       </Menu.Item>
       <Menu.Item
-        className="navMenuItem"
+        className="navMenuTextItem navMenuItem"
         icon={
           <TeamOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -52,7 +57,7 @@ const Nav = () => {
         ABOUT US
       </Menu.Item>
       <Menu.Item
-        className="navMenuItem"
+        className="navMenuTextItem navMenuItem"
         icon={
           <PhoneOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}

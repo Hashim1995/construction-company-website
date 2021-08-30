@@ -32,6 +32,7 @@ import youtube from "./youtube.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
+import hamburger from "./hamburger.svg";
 
 const CarouselImg = [car1, car2, car3, car4, car5];
 const ServicesIcons = [drill, home, hook, pipeline, repairman, energy];
@@ -59,4 +60,5 @@ export {
   PartnersImg,
   CustomersImg,
   SocialMediaImg,
+  hamburger,
 };

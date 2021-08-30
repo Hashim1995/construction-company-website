@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Divider } from "antd";
 import { logoImg, SocialMediaImg } from "../assets/img/imageList";
 import {
   DoubleRightOutlined,
@@ -12,7 +12,11 @@ const Footer = () => {
   return (
     <Row>
       <Col span={24} className="footerBackground">
-        <Col span={16} offset={4}>
+        <Col
+          xs={{ span: 22, offset: 1 }}
+          md={{ span: 20, offset: 2 }}
+          xl={{ span: 16, offset: 4 }}
+        >
           <footer className="footer">
             <div className="footerLeft">
               <h5>ABOUT US</h5>
@@ -107,6 +111,7 @@ const Footer = () => {
               </ul>
             </div>
           </footer>
+          <Divider className="footerBottomDivider" />
         </Col>
       </Col>
     </Row>

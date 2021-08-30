@@ -17,7 +17,11 @@ const Stat = () => {
         OUR STATISTIC
       </Divider>
       <Row>
-        <Col span={16} offset={4}>
+        <Col
+          xs={{ span: 22, offset: 1 }}
+          md={{ span: 20, offset: 2 }}
+          xl={{ span: 16, offset: 4 }}
+        >
           <div className="statWrap">
             <h5>The Construction Company</h5>
             <h2>AWESOME FACTS</h2>
