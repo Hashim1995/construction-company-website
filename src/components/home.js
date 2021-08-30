@@ -24,7 +24,6 @@ const Home = () => {
           </Col>
         </Col>
       </Row>
-      Main page
     </div>
   );
 };

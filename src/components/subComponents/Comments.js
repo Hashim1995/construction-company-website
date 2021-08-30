@@ -9,7 +9,7 @@ const Comments = () => {
         OUR CUSTOMERS'S FEEDBACK
       </Divider>
       <div className="commentsCarouselWrap">
-        <Carousel effect="fade">
+        <Carousel autoplay={true} effect="fade">
           <div>
             <Comment
               className="commentWrap"
