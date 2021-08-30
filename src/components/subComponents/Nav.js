@@ -8,6 +8,7 @@ import {
   TeamOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const handleClick = (e) => {
@@ -34,7 +35,7 @@ const Nav = () => {
           />
         }
       >
-        HOME
+        <Link to="/">HOME</Link>
       </Menu.Item>
       <Menu.Item
         className="navMenuTextItem navMenuItem"
@@ -44,7 +45,7 @@ const Nav = () => {
           />
         }
       >
-        PORTFOLIO
+        <Link to="/portfolio">PORTFOLIO</Link>
       </Menu.Item>
       <Menu.Item
         className="navMenuTextItem navMenuItem"

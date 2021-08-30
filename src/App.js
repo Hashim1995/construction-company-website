@@ -6,6 +6,7 @@ import "antd/dist/antd.css";
 import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
