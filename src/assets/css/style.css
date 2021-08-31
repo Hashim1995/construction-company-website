@@ -591,6 +591,13 @@ body {
   color: var(--black);
 }
 
+.ant-tabs-ink-bar {
+  background-color: transparent;
+}
+.ant-tabs-nav::before {
+  border: none !important;
+}
+
 .projectWrap {
   display: flex;
   justify-content: center;
