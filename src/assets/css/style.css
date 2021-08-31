@@ -582,9 +582,18 @@ body {
   border-radius: 8px;
   outline: none !important;
 }
+
+.ant-image-preview-operations {
+  background-color: var(--main-color);
+}
+
+.ant-image-preview-operations-icon {
+  color: var(--black);
+}
+
 .projectWrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1em 0;
   flex-wrap: wrap;
 }
