@@ -61,7 +61,7 @@ const Nav = () => {
           />
         }
       >
-        {t("about-us")}
+        <Link to="/aboutUs">{t("about-us")}</Link>
       </Menu.Item>
       <Menu.Item
         key="contact"
@@ -72,7 +72,7 @@ const Nav = () => {
           />
         }
       >
-        {t("contact")}
+        <Link to="/">{t("contact")}</Link>
       </Menu.Item>
     </Menu>
   );

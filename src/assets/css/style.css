@@ -43,32 +43,35 @@ body {
   font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem) !important;
 }
 
-.navMenuItem:hover {
-  color: --white !important;
-}
 .ant-menu-horizontal > .ant-menu-item::after,
 .ant-menu-horizontal > .ant-menu-submenu::after {
   display: none !important;
 }
-.navMenuItem:hover .navMenuItem::after {
-  border-bottom: 2px solid --white !important;
-}
 
 .navMenu .ant-menu-item-active:hover {
   color: white !important;
-  border: none !important;
 }
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
-  color: white !important;
-  border: none !important;
+
+.navMenuItem {
+  position: relative;
 }
+.ant-menu-title-content a::before {
+  transition: 0.5s !important;
+  position: absolute !important;
+  top: inherit;
+  bottom: 0;
+  left: 0px !important;
+  content: "" !important;
+  width: 0 !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+  background-color: var(--main-color) !important;
+}
+.ant-menu-title-content a:hover::before {
+  width: 100% !important;
+  transition: 0.5s;
+}
+
 /************************************* NAVBAR /*************************************/
 /************************************* CAROUSEL /*************************************/
 .headerCarousel .slick-dots-bottom {
@@ -635,3 +638,12 @@ div.fullscreen
   display: none;
 }
 /************************************* PORTFOLIO /*************************************/
+/************************************* ABOUT US /*************************************/
+.aboutUsTitle span {
+  font-size: var(--title-size);
+  color: var(--black);
+}
+.aboutUsWrap {
+  margin-top: 200px;
+}
+/************************************* ABOUT US /*************************************/
