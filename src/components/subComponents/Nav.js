@@ -1,5 +1,6 @@
 import React from "react";
 import { logoImg } from "../../assets/img/imageList.js";
+import { useTranslation } from "react-i18next";
 
 import { Menu } from "antd";
 import {
@@ -11,13 +12,15 @@ import {
 import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const { t } = useTranslation();
+
   const handleClick = (e) => {
     console.log("click ", e);
   };
 
   return (
     <Menu className="navMenu" onClick={handleClick} mode="horizontal">
-      <Menu.Item className="navMenuItem">
+      <Menu.Item key="logo" className="navMenuItem">
         <img
           className="navLogoImg"
           style={{ height: "100px" }}
@@ -28,6 +31,7 @@ const Nav = () => {
       </Menu.Item>
 
       <Menu.Item
+        key="home"
         className="navMenuTextItem navMenuItem"
         icon={
           <HomeOutlined
@@ -35,9 +39,10 @@ const Nav = () => {
           />
         }
       >
-        <Link to="/">HOME</Link>
+        <Link to="/">{t("main-page")}</Link>
       </Menu.Item>
       <Menu.Item
+        key="portfolio"
         className="navMenuTextItem navMenuItem"
         icon={
           <AppstoreOutlined
@@ -45,9 +50,10 @@ const Nav = () => {
           />
         }
       >
-        <Link to="/portfolio">PORTFOLIO</Link>
+        <Link to="/portfolio">{t("portfolio")}</Link>
       </Menu.Item>
       <Menu.Item
+        key="about-us"
         className="navMenuTextItem navMenuItem"
         icon={
           <TeamOutlined
@@ -55,9 +61,10 @@ const Nav = () => {
           />
         }
       >
-        ABOUT US
+        {t("about-us")}
       </Menu.Item>
       <Menu.Item
+        key="contact"
         className="navMenuTextItem navMenuItem"
         icon={
           <PhoneOutlined
@@ -65,7 +72,7 @@ const Nav = () => {
           />
         }
       >
-        CONTACT
+        {t("contact")}
       </Menu.Item>
     </Menu>
   );
