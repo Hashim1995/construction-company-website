@@ -37,9 +37,9 @@ body {
 .navMenuItem:first-child {
   order: -1 !important;
 }
-.navMenuItem {
-  color: var(--white);
-  font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
+.navMenuItem * {
+  color: var(--white) !important;
+  font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem) !important;
 }
 
 .navMenuItem:hover {
@@ -542,3 +542,64 @@ body {
   border-color: var(--white);
 }
 /************************************* FOOTER /*************************************/
+/************************************* PORTFOLIO /*************************************/
+.portfolioTitle span {
+  font-size: var(--title-size);
+  color: var(--black);
+}
+.portfolioWrap {
+  margin-top: 200px;
+}
+.portfolioWrap .ant-tabs-nav-wrap {
+  justify-content: center;
+}
+.portfolioWrap .ant-tabs-tab-btn,
+.portfolioWrap .ant-tabs-tab-active .ant-tabs-tab {
+  color: var(--black) !important;
+  font-size: var(--mini-title-size) !important;
+  text-shadow: none !important;
+  outline: none !important;
+}
+.ant-image-preview-operations .ant-tabs-nav::before {
+  border: none;
+  outline: none !important;
+}
+.ant-image-preview-wrap {
+  z-index: 999999 !important;
+}
+.ant-image-preview-operations .ant-image-preview-operations {
+  background: var(--main-color);
+}
+.ant-tabs-nav-wrap::before,
+.ant-tabs-nav-wrap::after {
+  display: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.portfolioWrap .ant-tabs-tab {
+  background-color: var(--main-color);
+  padding: 1em;
+  border-radius: 8px;
+  outline: none !important;
+}
+.projectWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  flex-wrap: wrap;
+}
+.projectItem {
+  flex: 0 0 33%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+.projectName {
+  font-size: var(--mini-title-size);
+  color: var(--black);
+  font-weight: bold;
+}
+
+.projectImgWrap img {
+  object-fit: cover;
+}
+/************************************* PORTFOLIO /*************************************/
