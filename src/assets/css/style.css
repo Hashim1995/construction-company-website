@@ -11,6 +11,7 @@
   --mini-title-size: clamp(1rem, -0.875rem + 1.8vw, 3.5rem);
   --body-bg-color: #e8e8e8;
 }
+@import "~react-image-gallery/styles/css/image-gallery.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   background-color: var(--body-bg-color);
@@ -556,39 +557,16 @@ body {
 .portfolioWrap .ant-tabs-tab-btn,
 .portfolioWrap .ant-tabs-tab-active .ant-tabs-tab {
   color: var(--black) !important;
-  font-size: var(--mini-title-size) !important;
+  font-weight: bold;
   text-shadow: none !important;
   outline: none !important;
 }
-.ant-image-preview-operations .ant-tabs-nav::before {
-  border: none;
-  outline: none !important;
-}
-.ant-image-preview-wrap {
-  z-index: 999999 !important;
-}
-.ant-image-preview-operations .ant-image-preview-operations {
-  background: var(--main-color);
-}
-.ant-tabs-nav-wrap::before,
-.ant-tabs-nav-wrap::after {
-  display: none !important;
-  border: none !important;
-  outline: none !important;
-}
+
 .portfolioWrap .ant-tabs-tab {
   background-color: var(--main-color);
   padding: 1em;
   border-radius: 8px;
   outline: none !important;
-}
-
-.ant-image-preview-operations {
-  background-color: var(--main-color);
-}
-
-.ant-image-preview-operations-icon {
-  color: var(--black);
 }
 
 .ant-tabs-ink-bar {
@@ -615,7 +593,45 @@ body {
   font-weight: bold;
 }
 
-.projectImgWrap img {
+div.image-gallery-content:not(.fullscreen)
+  .image-gallery-slide
+  .image-gallery-image {
+  max-height: calc(100vh - 80px);
+  height: 270px;
   object-fit: cover;
+}
+
+div.fullscreen
+  > div.image-gallery-slide-wrapper.bottom
+  > div
+  div
+  div.image-gallery-slide.center
+  img {
+  object-fit: scale-down;
+}
+.image-gallery-right-nav .image-gallery-svg,
+.image-gallery-left-nav .image-gallery-svg {
+  height: 64px;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus,
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:hover,
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:active {
+  border: 3px solid var(--main-color);
+}
+.image-gallery-icon,
+.image-gallery-icon:hover,
+.image-gallery-icon:active,
+.image-gallery-icon:focus {
+  color: var(--main-color);
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  object-fit: cover;
+  height: 80px;
+}
+.image-gallery-content:not(.fullscreen) .image-gallery-thumbnails-container {
+  display: none;
 }
 /************************************* PORTFOLIO /*************************************/

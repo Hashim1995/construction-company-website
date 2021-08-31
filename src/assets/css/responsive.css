@@ -80,6 +80,31 @@
   .navLogoImg {
     height: 64px !important;
   }
+
+  div.portfolioWrap
+    > div:nth-child(2)
+    > div
+    > div
+    > div
+    > div.ant-tabs-nav
+    > div.ant-tabs-nav-wrap
+    > div {
+    flex-direction: column !important;
+  }
+  div.portfolioWrap
+    > div:nth-child(2)
+    > div
+    > div
+    > div
+    > div.ant-tabs-nav
+    > div.ant-tabs-nav-wrap
+    > div
+    > div {
+    margin: 0.5em 0;
+  }
+  .projectItem {
+    flex: 0 0 100%;
+  }
 }
 /************************************* MAX 768 PX /*************************************/
 /************************************* MAX 992 PX /*************************************/
