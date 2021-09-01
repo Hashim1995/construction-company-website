@@ -320,9 +320,13 @@ const Portfolio = () => {
             md={{ span: 20, offset: 2 }}
             xl={{ span: 16, offset: 4 }}
           >
-            <Tabs defaultActiveKey="1">
+            <Tabs defaultActiveKey="1" onTabClick={(e) => console.log(e)}>
               {categories.map((category) => (
-                <TabPane tab={category.name} key={category.id}>
+                <TabPane
+                  tab={category.name}
+                  key={category.slug}
+                  onClick={() => console.log("clicked")}
+                >
                   <div className="projectWrap">
                     {products.map((product) => {
                       const image = product["assets"].map((img) => ({
