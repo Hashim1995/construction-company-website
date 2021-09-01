@@ -78,9 +78,9 @@ body {
   bottom: 10vh;
 }
 .headerCarousel .slick-dots-bottom button {
-  background-color: var(--main-color) !important;
+  background-color:  var(--main-color) !important;
+  border: 2px solid var(--black)!important;
   height: 25px !important;
-  border-radius: 50% !important;
 }
 
 .headerCarouselInnerWrap {
@@ -646,4 +646,81 @@ div.fullscreen
 .aboutUsWrap {
   margin-top: 200px;
 }
+.aboutUsText {
+  padding: 1em;
+  background-color: var(--main-color);
+  border-radius: 8px;
+}
+.aboutUsText h2 {
+  text-align: left;
+}
 /************************************* ABOUT US /*************************************/
+/************************************* CONTACT /*************************************/
+.contactTitle span {
+  font-size: var(--title-size);
+  color: var(--black);
+}
+.contactWrap {
+  margin-top: 200px;
+}
+
+.contactInnerWrap {
+  padding: 1em;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactInnerWrap ul li {
+  margin: 1em;
+}
+
+.contactInnerWrap p b {
+  color: var(--black);
+  margin-right: 8px;
+}
+.contactInnerWrap p,
+.contactInnerWrap a {
+  font-size: var(--basic-text-size);
+  color: var(--black);
+  text-align: left;
+}
+.contactInnerWrap p span {
+  font-size: var(--basic-text-size);
+  color: var(--black);
+  margin-right: 8px;
+}
+.contactInnerWrap ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.contactInnerWrap ul li img {
+  height: 32px;
+  transition: 0.3s ease-in;
+  filter: grayscale(100%);
+  transform: scale(1);
+}
+.contactInnerWrap ul li img:hover {
+  transition: 0.3s ease-out;
+
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+.contactMap {
+  margin: 1em 0;
+  border-radius: 8px;
+}
+
+div.contactMap > div:nth-child(2) {
+  border-radius: 8px;
+}
+
+/************************************* CONTACT /*************************************/
