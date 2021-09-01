@@ -1,6 +1,39 @@
+import { useState, useEffect } from "react";
 import { Divider, Tabs, Row, Col } from "antd";
 import ImageGallery from "react-image-gallery";
+import { commerce } from "../lib/commerce";
+
 const Portfolio = () => {
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [selectedCat, setSelectedCat] = useState("dizayn-i-l-ri");
+
+  useEffect(() => {
+    fetchCategories();
+    fetchCategoryProducts();
+  }, []);
+
+  // Categories
+
+  const fetchCategories = async () => {
+    const { data } = await commerce.categories.list();
+
+    setCategories(data);
+    console.log(data);
+  };
+
+  const fetchCategoryProducts = async () => {
+    try {
+      const { data } = await commerce.products.list({
+        category_slug: [selectedCat],
+      });
+      setProducts(data);
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   const { TabPane } = Tabs;
   const images1 = [
     {
@@ -288,7 +321,47 @@ const Portfolio = () => {
             xl={{ span: 16, offset: 4 }}
           >
             <Tabs defaultActiveKey="1">
-              <TabPane tab="SINGLE HOUSES" key="1">
+              {categories.map((category) => (
+                <TabPane tab={category.name} key={category.id}>
+                  <div className="projectWrap">
+                    {products.map((product) => {
+                      const image = product["assets"].map((img) => ({
+                        original: img.url,
+                        thumbnail: img.url,
+                      }));
+                      return (
+                        <div className="projectItem" key={product.id}>
+                          <ImageGallery showPlayButton={false} items={image} />
+                          <h4 className="projectName">{product.name}</h4>
+                        </div>
+                      );
+                    })}
+
+                    {/* <div className="projectItem">
+                      <ImageGallery showPlayButton={false} items={images2} />
+                      <h4 className="projectName">EYES OF ABSHERON</h4>
+                    </div>
+                    <div className="projectItem">
+                      <ImageGallery showPlayButton={false} items={images3} />
+                      <h4 className="projectName">CASPIAN MOONLIGHT</h4>
+                    </div>
+                    <div className="projectItem">
+                      <ImageGallery showPlayButton={false} items={images4} />
+                      <h4 className="projectName">GILAVAR</h4>
+                    </div>
+                    <div className="projectItem">
+                      <ImageGallery showPlayButton={false} items={images5} />
+                      <h4 className="projectName">OLD BREATH</h4>
+                    </div>
+                    <div className="projectItem">
+                      <ImageGallery showPlayButton={false} items={images6} />
+                      <h4 className="projectName">ABSHERON</h4>
+                    </div> */}
+                  </div>
+                </TabPane>
+              ))}
+
+              {/* <TabPane tab="SINGLE HOUSES" key="1">
                 <div className="projectWrap">
                   <div className="projectItem">
                     <ImageGallery showPlayButton={false} items={images1} />
@@ -355,7 +428,7 @@ const Portfolio = () => {
                     <h4 className="projectName">SUMGAIT CANDY FACTORY</h4>
                   </div>
                 </div>
-              </TabPane>
+              </TabPane> */}
             </Tabs>
           </Col>
         </Row>
