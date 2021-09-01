@@ -14,9 +14,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const { t } = useTranslation();
 
-  const handleClick = (e) => {
-    console.log("click ", e);
-  };
+  const handleClick = (e) => {};
 
   return (
     <Menu className="navMenu" onClick={handleClick} mode="horizontal">
