@@ -14,12 +14,21 @@ const AboutUs = () => {
             <Divider className="aboutUsTitle" dashed={true}>
               ABOUT US
             </Divider>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              aut temporibus, quos illo nemo odit eaque magnam quod cumque amet
-              molestias deserunt nobis, sint maiores tempore corporis et animi
-              in!
-            </h2>
+            <div className="aboutUsText">
+              <h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempora aut temporibus, quos illo nemo odit eaque magnam quod
+                cumque amet molestias deserunt nobis, sint maiores tempore
+                corporis et animi in! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias repellat, cum laborum amet libero,
+                at debitis optio quod ipsa distinctio deserunt, cupiditate
+                magnam. Ipsum cum eveniet sed ex, exercitationem perspiciatis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias repellat, cum laborum amet libero, at debitis optio
+                quod ipsa distinctio deserunt, cupiditate magnam. Ipsum cum
+                eveniet sed ex, exercitationem perspiciatis?
+              </h2>
+            </div>
           </div>
           <WhyUs />
         </Col>

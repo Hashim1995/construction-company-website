@@ -21,13 +21,15 @@ const Nav = () => {
   return (
     <Menu className="navMenu" onClick={handleClick} mode="horizontal">
       <Menu.Item key="logo" className="navMenuItem">
-        <img
-          className="navLogoImg"
-          style={{ height: "100px" }}
-          src={logoImg}
-          alt="company logo"
-        />
-        Your Company
+        <Link to="/">
+          <img
+            className="navLogoImg"
+            style={{ height: "100px" }}
+            src={logoImg}
+            alt="company logo"
+          />
+          Your Company
+        </Link>
       </Menu.Item>
 
       <Menu.Item
@@ -72,7 +74,7 @@ const Nav = () => {
           />
         }
       >
-        <Link to="/">{t("contact")}</Link>
+        <Link to="/contact">{t("contact")}</Link>
       </Menu.Item>
     </Menu>
   );
