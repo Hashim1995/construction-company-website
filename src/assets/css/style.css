@@ -3,7 +3,7 @@
 
 /* ROOT */
 
-/* :root {
+:root {
   --main-color: #ffbc13;
   --main-color-opacity: #ffbc1359;
   --black: rgb(17, 16, 16);
@@ -14,7 +14,7 @@
   --basic-text-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem);
   --mini-title-size: clamp(1rem, -0.875rem + 1.8vw, 3.5rem);
   --body-bg-color: #e8e8e8;
-} */
+}
 
 body {
   background-color: var(--body-bg-color);
