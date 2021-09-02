@@ -1,4 +1,4 @@
-/************************************* ROOT /*************************************/
+/* ROOT */
 :root {
   --main-color: #ffbc13;
   --main-color-opacity: #ffbc1359;
@@ -17,8 +17,8 @@ body {
   background-color: var(--body-bg-color);
   font-family: "Roboto", sans-serif;
 }
-/************************************* ROOT /*************************************/
-/************************************* NAVBAR /*************************************/
+/* ROOT */
+/* NAVBAR **/
 .navBackground {
   position: absolute;
   top: 0;
@@ -72,14 +72,14 @@ body {
   transition: 0.5s;
 }
 
-/************************************* NAVBAR /*************************************/
-/************************************* CAROUSEL /*************************************/
+/* NAVBAR */
+/* CAROUSEL */
 .headerCarousel .slick-dots-bottom {
   bottom: 10vh;
 }
 .headerCarousel .slick-dots-bottom button {
-  background-color:  var(--main-color) !important;
-  border: 2px solid var(--black)!important;
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--black) !important;
   height: 25px !important;
 }
 
@@ -114,9 +114,9 @@ body {
   top: 50vh;
   background-color: var(--main-color);
 }
-/************************************* CAROUSEL /*************************************/
+/* CAROUSEL */
 
-/************************************* MAIN SERVICES /*************************************/
+/* MAIN SERVICES */
 .mainServiceTitle span {
   font-size: var(--title-size);
 }
@@ -163,8 +163,8 @@ body {
   text-align: left;
   font-size: var(--basic-text-size);
 }
-/************************************* MAIN SERVICES /*************************************/
-/************************************* WHY US /*************************************/
+/* MAIN SERVICES */
+/* WHY US */
 .WhyUsWrap {
   display: flex;
   justify-content: space-between;
@@ -215,8 +215,8 @@ body {
   font-weight: bold;
 }
 
-/************************************* WHY US /*************************************/
-/************************************* STAT /*************************************/
+/* WHY US */
+/* STAT */
 .statTitle::before,
 .statTitle::after {
   color: var(--white);
@@ -270,9 +270,9 @@ body {
   font-weight: bold;
   color: var(--black);
 }
-/************************************* STAT /*************************************/
+/* STAT */
 
-/************************************* PARTNERS /*************************************/
+/* PARTNERS */
 .partnersTitle {
   margin-top: 3em !important;
 }
@@ -342,8 +342,8 @@ body {
   color: var(--black);
   font-weight: bold;
 }
-/************************************* PARTNERS /*************************************/
-/************************************* COMMENTS /*************************************/
+/* PARTNERS */
+/* COMMENTS */
 .commentsTitle span {
   font-size: var(--title-size);
   color: var(--black);
@@ -352,7 +352,7 @@ body {
   margin-top: 3em !important;
 }
 
-/************************************* COMMENTS /*************************************/
+/* COMMENTS */
 .commentWrap {
   background-color: var(--main-color);
   border-radius: 8px;
@@ -399,8 +399,8 @@ body {
   border-radius: 50%;
   border: 5px double var(--black);
 }
-/************************************* COMMENTS /*************************************/
-/************************************* FOOTER /*************************************/
+/* COMMENTS */
+/* FOOTER */
 .footerBackground {
   background-color: var(--black);
   margin-top: 3em;
@@ -545,8 +545,8 @@ body {
 .footerBottomDivider {
   border-color: var(--white);
 }
-/************************************* FOOTER /*************************************/
-/************************************* PORTFOLIO /*************************************/
+/* FOOTER */
+/* PORTFOLIO */
 .portfolioTitle span {
   font-size: var(--title-size);
   color: var(--black);
@@ -637,8 +637,8 @@ div.fullscreen
 .image-gallery-content:not(.fullscreen) .image-gallery-thumbnails-container {
   display: none;
 }
-/************************************* PORTFOLIO /*************************************/
-/************************************* ABOUT US /*************************************/
+/* PORTFOLIO */
+/* ABOUT US */
 .aboutUsTitle span {
   font-size: var(--title-size);
   color: var(--black);
@@ -654,8 +654,8 @@ div.fullscreen
 .aboutUsText h2 {
   text-align: left;
 }
-/************************************* ABOUT US /*************************************/
-/************************************* CONTACT /*************************************/
+/* ABOUT US */
+/* CONTACT */
 .contactTitle span {
   font-size: var(--title-size);
   color: var(--black);
@@ -723,4 +723,4 @@ div.contactMap > div:nth-child(2) {
   border-radius: 8px;
 }
 
-/************************************* CONTACT /*************************************/
+/* CONTACT */
