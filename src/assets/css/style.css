@@ -1,4 +1,8 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 /* ROOT */
+
 :root {
   --main-color: #ffbc13;
   --main-color-opacity: #ffbc1359;
@@ -11,8 +15,7 @@
   --mini-title-size: clamp(1rem, -0.875rem + 1.8vw, 3.5rem);
   --body-bg-color: #e8e8e8;
 }
-@import "~react-image-gallery/styles/css/image-gallery.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 body {
   background-color: var(--body-bg-color);
   font-family: "Roboto", sans-serif;
@@ -599,7 +602,7 @@ body {
 div.image-gallery-content:not(.fullscreen)
   .image-gallery-slide
   .image-gallery-image {
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh-80px);
   height: 270px;
   object-fit: cover;
 }
