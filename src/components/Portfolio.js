@@ -18,7 +18,6 @@ const Portfolio = () => {
     const { data } = await commerce.categories.list();
 
     setCategories(data);
-    console.log(data);
   };
 
   const fetchCategoryProducts = async (categoryId = "dizayn-i-l-ri") => {
@@ -27,7 +26,6 @@ const Portfolio = () => {
         category_slug: [categoryId],
       });
       setProducts(data);
-      console.log(data);
     } catch (e) {
       console.log(e);
     }
