@@ -6,7 +6,6 @@ import { commerce } from "../lib/commerce";
 const Portfolio = () => {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [selectedCat, setSelectedCat] = useState("dizayn-i-l-ri");
 
   useEffect(() => {
     fetchCategories();
@@ -22,10 +21,10 @@ const Portfolio = () => {
     console.log(data);
   };
 
-  const fetchCategoryProducts = async () => {
+  const fetchCategoryProducts = async (categoryId = "dizayn-i-l-ri") => {
     try {
       const { data } = await commerce.products.list({
-        category_slug: [selectedCat],
+        category_slug: [categoryId],
       });
       setProducts(data);
       console.log(data);
@@ -320,7 +319,10 @@ const Portfolio = () => {
             md={{ span: 20, offset: 2 }}
             xl={{ span: 16, offset: 4 }}
           >
-            <Tabs defaultActiveKey="1" onTabClick={(e) => console.log(e)}>
+            <Tabs
+              defaultActiveKey="1"
+              onTabClick={(categoryId) => fetchCategoryProducts(categoryId)}
+            >
               {categories.map((category) => (
                 <TabPane
                   tab={category.name}
@@ -328,18 +330,22 @@ const Portfolio = () => {
                   onClick={() => console.log("clicked")}
                 >
                   <div className="projectWrap">
-                    {products.map((product) => {
-                      const image = product["assets"].map((img) => ({
-                        original: img.url,
-                        thumbnail: img.url,
-                      }));
-                      return (
-                        <div className="projectItem" key={product.id}>
-                          <ImageGallery showPlayButton={false} items={image} />
-                          <h4 className="projectName">{product.name}</h4>
-                        </div>
-                      );
-                    })}
+                    {products &&
+                      products.map((product) => {
+                        const image = product["assets"].map((img) => ({
+                          original: img.url,
+                          thumbnail: img.url,
+                        }));
+                        return (
+                          <div className="projectItem" key={product.id}>
+                            <ImageGallery
+                              showPlayButton={false}
+                              items={image}
+                            />
+                            <h4 className="projectName">{product.name}</h4>
+                          </div>
+                        );
+                      })}
 
                     {/* <div className="projectItem">
                       <ImageGallery showPlayButton={false} items={images2} />
