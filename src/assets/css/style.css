@@ -65,7 +65,7 @@ body {
 .navMenuItem {
   position: relative;
 }
-.ant-menu-title-content a::before {
+.navMenuTextItem a::before {
   transition: 0.5s !important;
   position: absolute !important;
   top: inherit;
@@ -77,7 +77,7 @@ body {
   border-radius: 2px !important;
   background-color: var(--main-color) !important;
 }
-.ant-menu-title-content a:hover::before {
+.navMenuTextItem a:hover::before {
   width: 100% !important;
   transition: 0.5s;
 }

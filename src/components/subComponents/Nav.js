@@ -35,7 +35,6 @@ const Nav = () => {
             src={logoImg}
             alt="company logo"
           />
-          Your Company
         </Link>
       </Menu.Item>
 
