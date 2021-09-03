@@ -10,10 +10,14 @@
   --black-opacity: rgba(17, 16, 16, 0.575);
   --white: white;
   --small-size: 13px;
-  --title-size: clamp(1rem, -0.875rem + 2.2vw, 3.5rem);
-  --basic-text-size: clamp(1rem, -0.875rem + 1.3vw, 3.5rem);
-  --mini-title-size: clamp(1rem, -0.875rem + 1.6vw, 3.5rem);
+  --title-size: clamp(1rem, calc(-0.875rem + 2.2vw), 3.5rem);
+  --basic-text-size: clamp(1rem, calc(-0.875rem + 1.3vw), 3.5rem);
+  --mini-title-size: clamp(1rem, calc(-0.875rem + 1.6vw), 3.5rem);
   --body-bg-color: #e8e8e8;
+}
+
+* {
+  font-weight: normal;
 }
 
 body {
@@ -43,7 +47,10 @@ body {
 }
 .navMenuItem * {
   color: var(--white) !important;
-  font-size: clamp(1rem, -0.875rem + 1.5vw, 3.5rem) !important;
+  font-size: clamp(1rem, calc(-0.875rem + 1.5vw), 3.5rem) !important;
+}
+.ant-menu-submenu-popup .navMenuTextItem * {
+  color: var(--black) !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item::after,
@@ -115,12 +122,12 @@ body {
 }
 
 .headerCarouselInnerWrap h3 {
-  font-size: clamp(1rem, -0.875rem + 3.5vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 3.5vw), 8vw);
   top: 15vh;
   background-color: var(--main-color);
 }
 .headerCarouselInnerWrap h4 {
-  font-size: clamp(1rem, -0.875rem + 2.8vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 2.8vw), 8vw);
   top: 35vh;
   background-color: var(--main-color);
 }
@@ -128,7 +135,7 @@ body {
   object-fit: cover;
 }
 .headerCarouselInnerWrap h5 {
-  font-size: clamp(1rem, -0.875rem + 2vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 2vw), 8vw);
   top: 50vh;
   background-color: var(--main-color);
 }
@@ -248,12 +255,12 @@ body {
   color: var(--white);
 }
 .statWrap h2 {
-  font-size: clamp(1rem, -0.875rem + 3.5vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 3.5vw), 8vw);
   color: white;
   font-weight: bold;
 }
 .statWrap h5 {
-  font-size: clamp(1rem, -0.875rem + 2vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 2vw), 8vw);
   color: white;
   font-weight: bold;
 }
@@ -279,7 +286,7 @@ body {
   height: 70px;
 }
 .statCounter {
-  font-size: clamp(1rem, -0.875rem + 2.5vw, 8vw);
+  font-size: clamp(1rem, calc(-0.875rem + 2.5vw), 8vw);
   font-weight: bold;
   color: var(--black);
 }
