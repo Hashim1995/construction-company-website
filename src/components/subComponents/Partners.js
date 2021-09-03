@@ -1,13 +1,14 @@
 import React from "react";
 import { Divider } from "antd";
-
+import { useTranslation } from "react-i18next";
 import { PartnersImg } from "../../assets/img/imageList.js";
 
 const Partners = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Divider className="partnersTitle" dashed={true}>
-        OUR PARTNERS
+        {t("our-partners")}
       </Divider>
       <div className="partnersWrap">
         <div className="partnersItem">

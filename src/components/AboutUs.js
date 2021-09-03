@@ -1,7 +1,9 @@
 import React from "react";
 import { Divider, Row, Col } from "antd";
 import WhyUs from "./subComponents/WhyUs.js";
+import { useTranslation } from "react-i18next";
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Row>
@@ -12,22 +14,10 @@ const AboutUs = () => {
         >
           <div className="aboutUsWrap">
             <Divider className="aboutUsTitle" dashed={true}>
-              ABOUT US
+              {t("about-us-title")}
             </Divider>
             <div className="aboutUsText">
-              <h2>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora aut temporibus, quos illo nemo odit eaque magnam quod
-                cumque amet molestias deserunt nobis, sint maiores tempore
-                corporis et animi in! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Molestias repellat, cum laborum amet libero,
-                at debitis optio quod ipsa distinctio deserunt, cupiditate
-                magnam. Ipsum cum eveniet sed ex, exercitationem perspiciatis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias repellat, cum laborum amet libero, at debitis optio
-                quod ipsa distinctio deserunt, cupiditate magnam. Ipsum cum
-                eveniet sed ex, exercitationem perspiciatis?
-              </h2>
+              <h2>{t("about-us-text")}</h2>
             </div>
           </div>
           <WhyUs />

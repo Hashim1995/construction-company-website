@@ -5,10 +5,13 @@ import {
   DoubleRightOutlined,
   EnvironmentOutlined,
   PhoneOutlined,
+  WhatsAppOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <Row>
       <Col span={24} className="footerBackground">
@@ -19,63 +22,72 @@ const Footer = () => {
         >
           <footer className="footer">
             <div className="footerLeft">
-              <h5>ABOUT US</h5>
+              <h5> {t("footer-about-us-header")}</h5>
               <img src={logoImg} alt="" />
-              <p>
-                Building isn’t just a job. At the Construction Company, it is
-                our passion. With every project we undertake, we set the bar
-                high and provide the best people in the industry, with a true
-                love of what we do to make our Customers’ vision a reality.
-              </p>
+              <p>{t("footer-about-us-text")}</p>
             </div>
             <div className="footerCenter">
-              <h5>COMPANY LINKS</h5>
+              <h5>{t("footer-links-header")}</h5>
               <ul>
                 <li>
                   {" "}
                   <DoubleRightOutlined />
-                  <a href="google.com"> Home </a>
+                  <Link to="/">{t("main-page")}</Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Portfolio </a>
+                  <Link to="/portfolio">{t("footer-links-portfolio")}</Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> About us</a>
+                  <Link to="/aboutUs">{t("footer-links-about-us")}</Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Contact </a>
+                  <Link to="/contact">{t("footer-links-contact")}</Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Feedback </a>
+                  <Link href=".commentsCarouselWrap" to="/">
+                    {t("footer-links-feedback")}
+                  </Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Services </a>
+                  <Link href=".mainServiceWrap" to="/">
+                    {t("footer-links-services")}
+                  </Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Our partners </a>
+                  <Link href=".partnersWrap" to="/">
+                    {t("footer-links-our-partners")}
+                  </Link>
                 </li>
                 <li>
                   <DoubleRightOutlined />
-                  <a href="google.com"> Statistic </a>
+                  <Link to="/#stat">{t("footer-links-statistic")}</Link>
                 </li>
               </ul>
             </div>
             <div className="footerRight">
-              <h5>CONTACT INFO</h5>
+              <h5>{t("footer-contact-header")}</h5>
               <p>
                 <EnvironmentOutlined />
-                <b>Address : </b> 245a, Rashid Behbudov st, Baku, Azerbaijan
+                <b>{t("footer-contact-address")} : </b> 245a, Rashid Behbudov
+                st, Baku, Azerbaijan
               </p>
               <p>
                 <PhoneOutlined />
-                <b>Phone : </b>{" "}
+                <b>{t("footer-contact-phone")} : </b>{" "}
                 <a href="tel:+994 55-123-45-67">+994 55-123-45-67</a>
+              </p>
+              <p>
+                <WhatsAppOutlined />
+                <b>Whatsapp : </b>{" "}
+                <a href="https://wa.me/+994502507490?text=Salam.+%C5%9Eirk%C9%99tiniz+haqq%C4%B1ndam%C9%99lumat+almaq+ist%C9%99y%C9%99rdim.">
+                  {t("send-on-wp")}
+                </a>
               </p>
               <p>
                 <MailOutlined />
@@ -111,7 +123,9 @@ const Footer = () => {
               </ul>
             </div>
           </footer>
-          <Divider className="footerBottomDivider" />
+          <Divider plain className="footerBottomDivider">
+            {t("copyright")}
+          </Divider>
         </Col>
       </Col>
     </Row>

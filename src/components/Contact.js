@@ -7,8 +7,9 @@ import {
   PhoneOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-
+import { useTranslation } from "react-i18next";
 const Contact = () => {
+  const { t } = useTranslation();
   const mapStyles = {
     height: "50vh",
     width: "100%",
@@ -29,17 +30,18 @@ const Contact = () => {
         >
           <div className="contactWrap">
             <Divider className="contactTitle" dashed={true}>
-              CONTACT US
+              {t("contact-title")}
             </Divider>
             <div className="contactText">
               <div className="contactInnerWrap">
                 <p>
                   <EnvironmentOutlined />
-                  <b>Address : </b> 245a, Rashid Behbudov st, Baku, Azerbaijan
+                  <b>{t("footer-contact-address")} : </b> 245a, Rashid Behbudov
+                  st, Baku, Azerbaijan
                 </p>
                 <p>
                   <PhoneOutlined />
-                  <b>Phone : </b>{" "}
+                  <b>{t("footer-contact-phone")} : </b>{" "}
                   <a href="tel:+994 55-123-45-67">+994 55-123-45-67</a>
                 </p>
                 <p>

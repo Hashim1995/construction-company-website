@@ -1,12 +1,13 @@
 import React from "react";
 import { Divider, Carousel, Comment, Avatar } from "antd";
 import { CustomersImg } from "../../assets/img/imageList.js";
-
+import { useTranslation } from "react-i18next";
 const Comments = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Divider className="commentsTitle" dashed={true}>
-        OUR CUSTOMERS'S FEEDBACK
+        {t("feedback-header")}
       </Divider>
       <div className="commentsCarouselWrap">
         <Carousel autoplay={true} effect="fade">

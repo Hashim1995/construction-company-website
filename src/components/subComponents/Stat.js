@@ -4,8 +4,10 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { Row, Col } from "antd";
 import { statbackground, StatisticImg } from "../../assets/img/imageList.js";
+import { useTranslation } from "react-i18next";
 
 const Stat = () => {
+  const { t } = useTranslation();
   return (
     <div
       style={{
@@ -14,7 +16,7 @@ const Stat = () => {
       }}
     >
       <Divider className="statTitle" dashed={true}>
-        OUR STATISTIC
+        {t("our-stat-title")}
       </Divider>
       <Row>
         <Col
@@ -23,10 +25,10 @@ const Stat = () => {
           xl={{ span: 16, offset: 4 }}
         >
           <div className="statWrap">
-            <h5>The Construction Company</h5>
-            <h2>AWESOME FACTS</h2>
+            <h5>{t("our-stat-header-1")}</h5>
+            <h2>{t("our-stat-header-2")}</h2>
             <div className="statItemWrap">
-              <div className="statItem">
+              <div id="stat" className="statItem">
                 <img
                   className="statImg"
                   src={StatisticImg[0]}
@@ -54,7 +56,7 @@ const Stat = () => {
                   )}
                 </VisibilitySensor>
 
-                <span className="statLabel">FINISHED PROJECTS</span>
+                <span className="statLabel">{t("our-stat-1-text")}</span>
               </div>
               <div className="statItem">
                 <img
@@ -83,7 +85,7 @@ const Stat = () => {
                     </div>
                   )}
                 </VisibilitySensor>
-                <span className="statLabel">UNDER CONSTRUCTION PROJECTS</span>
+                <span className="statLabel">{t("our-stat-2-text")}</span>
               </div>
               <div className="statItem">
                 <img
@@ -112,7 +114,7 @@ const Stat = () => {
                     </div>
                   )}
                 </VisibilitySensor>
-                <span className="statLabel">PLANNED PROJECTS</span>
+                <span className="statLabel">{t("our-stat-3-text")}</span>
               </div>
             </div>
           </div>

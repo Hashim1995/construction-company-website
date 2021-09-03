@@ -2,8 +2,10 @@ import React from "react";
 import { Row, Col } from "antd";
 import { Carousel } from "antd";
 import { CarouselImg } from "../../assets/img/imageList.js";
+import { useTranslation } from "react-i18next";
 
 const CarouselSlider = () => {
+  const { t } = useTranslation();
   const contentStyle = {
     width: "100%",
     height: "100vh",
@@ -29,9 +31,9 @@ const CarouselSlider = () => {
                   src={CarouselImg[0]}
                   alt="carousel  1"
                 />
-                <h3>We have 30 plus years in the building industry</h3>
-                <h4>Quality construction continues after the project</h4>
-                <h5>We use technology to do the job more quickly</h5>
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -42,9 +44,9 @@ const CarouselSlider = () => {
                   src={CarouselImg[1]}
                   alt="carousel  2"
                 />
-                <h3>We have 30 plus years in the building industry</h3>
-                <h4>Quality construction continues after the project</h4>
-                <h5>We use technology to do the job more quickly</h5>
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -55,9 +57,9 @@ const CarouselSlider = () => {
                   src={CarouselImg[2]}
                   alt="carousel  3"
                 />
-                <h3>We have 30 plus years in the building industry</h3>
-                <h4>Quality construction continues after the project</h4>
-                <h5>We use technology to do the job more quickly</h5>
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -67,9 +69,9 @@ const CarouselSlider = () => {
                   src={CarouselImg[3]}
                   alt="carousel  4"
                 />
-                <h3>We have 30 plus years in the building industry</h3>
-                <h4>Quality construction continues after the project</h4>
-                <h5>We use technology to do the job more quickly</h5>
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -79,9 +81,9 @@ const CarouselSlider = () => {
                   src={CarouselImg[4]}
                   alt="carousel  5"
                 />
-                <h3>We have 30 plus years in the building industry</h3>
-                <h4>Quality construction continues after the project</h4>
-                <h5>We use technology to do the job more quickly</h5>
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
           </Carousel>

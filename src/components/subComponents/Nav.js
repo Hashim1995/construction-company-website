@@ -1,8 +1,9 @@
 import React from "react";
 import { logoImg } from "../../assets/img/imageList.js";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
-import { Menu } from "antd";
+import { Menu, Switch } from "antd";
 import {
   HomeOutlined,
   AppstoreOutlined,
@@ -10,10 +11,18 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-
+localStorage.setItem("lang", "en");
 const Nav = () => {
   const { t } = useTranslation();
 
+  function langSwitch(checked, e) {
+    console.log(e);
+    if (checked) {
+      i18n.changeLanguage("en");
+    } else {
+      i18n.changeLanguage("az");
+    }
+  }
   const handleClick = (e) => {};
 
   return (
@@ -73,6 +82,15 @@ const Nav = () => {
         }
       >
         <Link to="/contact">{t("contact")}</Link>
+      </Menu.Item>
+      <Menu.Item key="lang" className=" navMenuItem">
+        <Switch
+          onChange={langSwitch}
+          className="langSwitch"
+          checkedChildren="En"
+          unCheckedChildren="Az"
+          defaultChecked
+        />
       </Menu.Item>
     </Menu>
   );
