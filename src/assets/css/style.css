@@ -644,7 +644,7 @@ div.fullscreen
   div
   div.image-gallery-slide.center
   img {
-  object-fit: scale-down;
+  object-fit: contain;
 }
 .image-gallery-right-nav .image-gallery-svg,
 .image-gallery-left-nav .image-gallery-svg {
