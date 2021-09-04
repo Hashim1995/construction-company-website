@@ -40,7 +40,7 @@ const Services = () => {
         </div>
         <div className="mainServiceItem">
           <div className="mainServiceItemImgWrap">
-            <img src={ServicesIcons[3]} alt="General Contracting" />
+            <img src={ServicesIcons[4]} alt="General Contracting" />
           </div>
           <div className="mainServiceTextWrap">
             <h5>{t("services-4-header")}</h5>
