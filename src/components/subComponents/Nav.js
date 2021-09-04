@@ -89,7 +89,7 @@ const Nav = () => {
           className="langSwitch"
           checkedChildren="En"
           unCheckedChildren="Az"
-          defaultChecked
+          defaultChecked={i18n.language === "en"}
         />
       </Menu.Item>
     </Menu>
