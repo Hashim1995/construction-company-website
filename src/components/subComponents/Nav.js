@@ -11,16 +11,17 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-localStorage.setItem("lang", "en");
+
 const Nav = () => {
   const { t } = useTranslation();
 
-  function langSwitch(checked, e) {
-    console.log(e);
+  function langSwitch(checked) {
     if (checked) {
       i18n.changeLanguage("en");
+      localStorage.setItem("language", "en");
     } else {
       i18n.changeLanguage("az");
+      localStorage.setItem("language", "az");
     }
   }
   const handleClick = (e) => {};
@@ -93,7 +94,7 @@ const Nav = () => {
           className="langSwitch"
           checkedChildren="En"
           unCheckedChildren="Az"
-          defaultChecked
+          defaultChecked={i18n.language === "en"}
         />
       </Menu.Item>
     </Menu>

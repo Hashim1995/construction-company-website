@@ -16,13 +16,11 @@ const resources = {
 
 const language = navigator.language.split(/[-_]/)[0];
 
-console.log(navigator.language);
-
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: localStorage.getItem("language") || language,
+    lng: localStorage.getItem("language") || language || "az",
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
