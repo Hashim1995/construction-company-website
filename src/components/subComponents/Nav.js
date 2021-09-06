@@ -26,8 +26,13 @@ const Nav = () => {
   const handleClick = (e) => {};
 
   return (
-    <Menu className="navMenu" onClick={handleClick} mode="horizontal">
-      <Menu.Item key="logo" className="navMenuItem">
+    <Menu
+      breakpoint="md"
+      className="navMenu"
+      onClick={handleClick}
+      mode="horizontal"
+    >
+      <Menu.Item key="logo" className="navMenuItem ">
         <Link to="/">
           <img
             className="navLogoImg"
@@ -40,7 +45,7 @@ const Nav = () => {
 
       <Menu.Item
         key="home"
-        className="navMenuTextItem navMenuItem"
+        className="navMenuTextItem navMenuItem navMobileItem navItemMainPage"
         icon={
           <HomeOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -51,7 +56,7 @@ const Nav = () => {
       </Menu.Item>
       <Menu.Item
         key="portfolio"
-        className="navMenuTextItem navMenuItem"
+        className="navMenuTextItem navMenuItem navMobileItem"
         icon={
           <AppstoreOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -62,7 +67,7 @@ const Nav = () => {
       </Menu.Item>
       <Menu.Item
         key="about-us"
-        className="navMenuTextItem navMenuItem"
+        className="navMenuTextItem navMenuItem navMobileItem"
         icon={
           <TeamOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -73,7 +78,7 @@ const Nav = () => {
       </Menu.Item>
       <Menu.Item
         key="contact"
-        className="navMenuTextItem navMenuItem"
+        className="navMenuTextItem navMenuItem navMobileItem"
         icon={
           <PhoneOutlined
             style={{ fontSize: "clamp(1rem, -0.875rem + 1.8vw, 3.5rem)" }}
@@ -82,7 +87,7 @@ const Nav = () => {
       >
         <Link to="/contact">{t("contact")}</Link>
       </Menu.Item>
-      <Menu.Item key="lang" className=" navMenuItem">
+      <Menu.Item key="lang" className=" navMenuItem navMobileItem">
         <Switch
           onChange={langSwitch}
           className="langSwitch"

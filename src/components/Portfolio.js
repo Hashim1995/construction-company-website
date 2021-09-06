@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Divider, Tabs, Row, Col } from "antd";
+import { Divider, Tabs, Row, Col, Spin } from "antd";
 import ImageGallery from "react-image-gallery";
 import { commerce } from "../lib/commerce";
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-
+  const [spinnerState, setSpinnerState] = useState(true);
   useEffect(() => {
     fetchCategories();
     fetchCategoryProducts();
@@ -26,7 +26,9 @@ const Portfolio = () => {
       const { data } = await commerce.products.list({
         category_slug: [categoryId],
       });
+
       setProducts(data);
+      setSpinnerState(false);
     } catch (e) {
       console.log(e);
     }
@@ -48,16 +50,21 @@ const Portfolio = () => {
           >
             <Tabs
               defaultActiveKey="1"
-              onTabClick={(categoryId) => fetchCategoryProducts(categoryId)}
+              onTabClick={(categoryId) => {
+                fetchCategoryProducts(categoryId);
+              }}
             >
               {categories.map((category) => (
                 <TabPane
                   tab={category.name}
                   key={category.slug}
-                  onClick={() => console.log("clicked")}
+                  onChange={() => {}}
                 >
                   <div className="projectWrap">
-                    {products &&
+                    {spinnerState ? (
+                      <Spin />
+                    ) : (
+                      products &&
                       products.map((product) => {
                         const image = product["assets"].map((img) => ({
                           original: img.url,
@@ -72,7 +79,8 @@ const Portfolio = () => {
                             <h4 className="projectName">{product.name}</h4>
                           </div>
                         );
-                      })}
+                      })
+                    )}
 
                     {/* <div className="projectItem">
                       <ImageGallery showPlayButton={false} items={images2} />

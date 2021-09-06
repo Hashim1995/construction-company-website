@@ -29,10 +29,19 @@
     top: 71px !important;
   }
 }
+/* BREAKPONT FOR HAMBURGER MENU */
+@media only screen and (max-width: 992px) {
+  .navLogoImg {
+    height: 64px !important;
+  }
+}
 
 /************************************* ROOT /*************************************/
 /************************************* MAX 480 PX /*************************************/
 @media only screen and (max-width: 480px) {
+  .navItemMainPage {
+    margin-right: 22px;
+  }
 }
 /************************************* MAX 480 PX /*************************************/
 /************************************* MAX 576 PX /*************************************/
@@ -75,10 +84,6 @@
 
     height: 15px !important;
     width: 15px !important;
-  }
-
-  .navLogoImg {
-    height: 64px !important;
   }
 
   div.portfolioWrap

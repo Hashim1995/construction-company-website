@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 /* ROOT */
-
+#root {
+}
 :root {
   --main-color: #9b6f52;
   --main-color-opacity: #9b6f524b;
@@ -50,7 +51,7 @@ body {
   font-size: clamp(1rem, calc(-0.875rem + 1.5vw), 3.5rem) !important;
 }
 .ant-menu-submenu-popup .navMenuTextItem * {
-  color: var(--black) !important;
+  color: var(--white) !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item::after,
@@ -599,6 +600,12 @@ body {
   outline: none !important;
 }
 
+.ant-tabs-tab-active {
+  background-color: #8d4b1f !important;
+}
+.ant-tabs-tab:hover {
+  background-color: #8d4b1f !important;
+}
 .portfolioWrap .ant-tabs-tab {
   background-color: var(--main-color);
   padding: 1em;
