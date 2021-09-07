@@ -7,7 +7,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [spinnerState, setSpinnerState] = useState(true);
+  const [spinnerState, setSpinnerState] = useState(false);
   useEffect(() => {
     fetchCategories();
     fetchCategoryProducts();
@@ -22,6 +22,7 @@ const Portfolio = () => {
   };
 
   const fetchCategoryProducts = async (categoryId = "dizayn-i-l-ri") => {
+    setSpinnerState(true);
     try {
       const { data } = await commerce.products.list({
         category_slug: [categoryId],
@@ -31,6 +32,7 @@ const Portfolio = () => {
       setSpinnerState(false);
     } catch (e) {
       console.log(e);
+      setSpinnerState(false);
     }
   };
 

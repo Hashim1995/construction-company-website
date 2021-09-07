@@ -16,12 +16,14 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
+
   useEffect(() => {
     setIsLoaded(false);
-  });
+  }, []);
+
   return (
     <BrowserRouter>
-      {isLoaded && (
+      {isLoaded ? (
         <Spin
           size={"large"}
           style={{
@@ -31,8 +33,7 @@ function App() {
             height: " 100vh",
           }}
         />
-      )}
-      {!isLoaded && (
+      ) : (
         <div className="App">
           <Header />
           <Switch>
