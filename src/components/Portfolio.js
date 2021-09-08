@@ -83,99 +83,9 @@ const Portfolio = () => {
                         );
                       })
                     )}
-
-                    {/* <div className="projectItem">
-                      <ImageGallery showPlayButton={false} items={images2} />
-                      <h4 className="projectName">EYES OF ABSHERON</h4>
-                    </div>
-                    <div className="projectItem">
-                      <ImageGallery showPlayButton={false} items={images3} />
-                      <h4 className="projectName">CASPIAN MOONLIGHT</h4>
-                    </div>
-                    <div className="projectItem">
-                      <ImageGallery showPlayButton={false} items={images4} />
-                      <h4 className="projectName">GILAVAR</h4>
-                    </div>
-                    <div className="projectItem">
-                      <ImageGallery showPlayButton={false} items={images5} />
-                      <h4 className="projectName">OLD BREATH</h4>
-                    </div>
-                    <div className="projectItem">
-                      <ImageGallery showPlayButton={false} items={images6} />
-                      <h4 className="projectName">ABSHERON</h4>
-                    </div> */}
                   </div>
                 </TabPane>
               ))}
-
-              {/* <TabPane tab="SINGLE HOUSES" key="1">
-                <div className="projectWrap">
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images1} />
-                    <h4 className="projectName">BUZOVNA</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images2} />
-                    <h4 className="projectName">EYES OF ABSHERON</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images3} />
-                    <h4 className="projectName">CASPIAN MOONLIGHT</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images4} />
-                    <h4 className="projectName">GILAVAR</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images5} />
-                    <h4 className="projectName">OLD BREATH</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images6} />
-                    <h4 className="projectName">ABSHERON</h4>
-                  </div>
-                </div>
-              </TabPane>
-              <TabPane tab="APARTMENTS" key="2">
-                <div className="projectWrap">
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images7} />
-                    <h4 className="projectName">SAHIL</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images8} />
-                    <h4 className="projectName">28 MAY</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images9} />
-                    <h4 className="projectName">NIZAMI</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images10} />
-                    <h4 className="projectName">CENTRAL PARK</h4>
-                  </div>
-                </div>
-              </TabPane>
-              <TabPane tab="BUSINESS CENTERS" key="3">
-                <div className="projectWrap">
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images11} />
-                    <h4 className="projectName">NIZAMI BUSINESS CENTER</h4>
-                  </div>
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images12} />
-                    <h4 className="projectName">KHAZAR BUSINESS CENTER</h4>
-                  </div>
-                </div>
-              </TabPane>
-              <TabPane tab="FACTORIES" key="4">
-                <div className="projectWrap">
-                  <div className="projectItem">
-                    <ImageGallery showPlayButton={false} items={images13} />
-                    <h4 className="projectName">SUMGAIT CANDY FACTORY</h4>
-                  </div>
-                </div>
-              </TabPane> */}
             </Tabs>
           </Col>
         </Row>
