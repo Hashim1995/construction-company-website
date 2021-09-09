@@ -77,23 +77,6 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-              <div className="contactMap">
-                <LoadScript googleMapsApiKey="AIzaSyCAIwTPctnSM2PWcbK6cMdlZaSgEYIKp5U">
-                  <GoogleMap
-                    mapContainerStyle={mapStyles}
-                    zoom={13}
-                    center={defaultCenter}
-                  >
-                    <Marker
-                      key={"Location 1"}
-                      position={{
-                        lat: 40.4093,
-                        lng: 49.8671,
-                      }}
-                    />
-                  </GoogleMap>
-                </LoadScript>
-              </div>
             </div>
           </div>
         </Col>
