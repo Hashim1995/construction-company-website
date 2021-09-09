@@ -25,12 +25,6 @@ const WhyUs = () => {
             <Panel className="WhyUsPanel" header={t("why-us-2-header")} key="2">
               <p>{t("why-us-2-text")}</p>
             </Panel>
-            <Panel className="WhyUsPanel" header={t("why-us-3-header")} key="3">
-              <p>{t("why-us-3-text")}</p>
-            </Panel>
-            <Panel className="WhyUsPanel" header={t("why-us-4-header")} key="4">
-              <p>{t("why-us-4-text")}</p>
-            </Panel>
           </Collapse>
           <div className="WhyUsGallery">
             <Image.PreviewGroup>

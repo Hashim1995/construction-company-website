@@ -695,7 +695,6 @@ div.fullscreen
 }
 
 .aboutUsText h2 {
-  text-align: left;
   color: var(--white);
   font-size: var(--basic-text-size);
 }

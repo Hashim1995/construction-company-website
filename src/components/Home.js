@@ -28,7 +28,7 @@ const Home = () => {
             xl={{ span: 16, offset: 4 }}
           >
             <Partners />
-            <Comments />
+            {/* <Comments /> */}
           </Col>
         </Col>
       </Row>
