@@ -1,6 +1,7 @@
 import React from "react";
 import { Divider, Row, Col } from "antd";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import whatsappIcon from "../assets/img/whatsapp.png";
+// import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { SocialMediaImg } from "../assets/img/imageList";
 import {
   EnvironmentOutlined,
@@ -42,37 +43,30 @@ const Contact = () => {
                 <p>
                   <PhoneOutlined />
                   <b>{t("footer-contact-phone")} : </b>{" "}
-                  <a href="tel:+994 55-123-45-67">+994 55-123-45-67</a>
+                  <a href="tel:+994 55-123-45-67">+994 50 250 74 90</a>
                 </p>
                 <p>
                   <MailOutlined />
                   <b>E-mail : </b>{" "}
-                  <a href="mailto:contact@company.com"> contact@company.com</a>
+                  <a href="mailto:rrnarqrup@gmail.com">rrnarqrup@gmail.com</a>
                 </p>
                 <ul>
                   <li>
-                    <a target="_blank" href="google.com">
+                    <a target="_blank" href="#">
                       <img src={SocialMediaImg[0]} alt="facebook" />
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href="google.com">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/rrnarqrup/"
+                    >
                       <img src={SocialMediaImg[1]} alt="instagram" />
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href="google.com">
-                      <img src={SocialMediaImg[2]} alt="facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="google.com">
-                      <img src={SocialMediaImg[3]} alt="youtube" />
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="google.com">
-                      <img src={SocialMediaImg[4]} alt="twitter" />
+                    <a target="_blank" href="https://wa.me/+994502507490">
+                      <img src={whatsappIcon} alt="whatsapp" />
                     </a>
                   </li>
                 </ul>

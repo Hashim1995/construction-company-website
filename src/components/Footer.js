@@ -80,19 +80,19 @@ const Footer = () => {
               <p>
                 <PhoneOutlined />
                 <b>{t("footer-contact-phone")} : </b>{" "}
-                <a href="tel:+994 55-123-45-67">+994 55-123-45-67</a>
+                <a href="tel:+994 55-123-45-67">+994 50 250 74 90</a>
               </p>
               <p>
                 <WhatsAppOutlined />
                 <b>Whatsapp : </b>{" "}
-                <a href="https://wa.me/+994502507490?text=Salam.+%C5%9Eirk%C9%99tiniz+haqq%C4%B1ndam%C9%99lumat+almaq+ist%C9%99y%C9%99rdim.">
+                <a href="https://wa.me/+994502507490" target="_blank">
                   {t("send-on-wp")}
                 </a>
               </p>
               <p>
                 <MailOutlined />
                 <b>E-mail : </b>{" "}
-                <a href="mailto:contact@company.com"> contact@company.com</a>
+                <a href="mailto:contact@company.com">rrnarqrup@gmail.com</a>
               </p>
               <ul>
                 <li>
@@ -113,11 +113,6 @@ const Footer = () => {
                 <li>
                   <a target="_blank" href="google.com">
                     <img src={SocialMediaImg[3]} alt="youtube" />
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="google.com">
-                    <img src={SocialMediaImg[4]} alt="twitter" />
                   </a>
                 </li>
               </ul>
