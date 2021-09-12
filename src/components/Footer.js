@@ -84,7 +84,11 @@ const Footer = () => {
               <p>
                 <WhatsAppOutlined />
                 <b>Whatsapp : </b>{" "}
-                <a href="https://wa.me/+994502507490" target="_blank">
+                <a
+                  href="https://wa.me/+994502507490"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {t("send-on-wp")}
                 </a>
               </p>
@@ -102,7 +106,6 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  rel="noreferrer"
                   <a target="_blank" rel="noreferrer" href="google.com">
                     <img src={SocialMediaImg[1]} alt="instagram" />
                   </a>
