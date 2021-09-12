@@ -44,7 +44,11 @@ const Contact = () => {
                 </p>
                 <ul>
                   <li>
-                    <a target="_blank" rel="noreferrer" href="#">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://facebook.com"
+                    >
                       <img src={SocialMediaImg[0]} alt="facebook" />
                     </a>
                   </li>
