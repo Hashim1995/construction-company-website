@@ -2,11 +2,7 @@ import React from "react";
 import { Divider, Row, Col } from "antd";
 import whatsappIcon from "../assets/img/whatsapp.png";
 import { SocialMediaImg } from "../assets/img/imageList";
-import {
-  EnvironmentOutlined,
-  PhoneOutlined,
-  MailOutlined,
-} from "@ant-design/icons";
+import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 const Contact = () => {
   const { t } = useTranslation();
@@ -25,11 +21,11 @@ const Contact = () => {
             </Divider>
             <div className="contactText">
               <div className="contactInnerWrap">
-                <p>
+                {/* <p>
                   <EnvironmentOutlined />
                   <b>{t("footer-contact-address")} : </b> 245a, Rashid Behbudov
                   st, Baku, Azerbaijan
-                </p>
+                </p> */}
                 <p>
                   <PhoneOutlined />
                   <b>{t("footer-contact-phone")} : </b>{" "}
