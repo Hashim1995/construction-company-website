@@ -97,7 +97,7 @@ const Portfolio = () => {
       </div>
       <div>
         <Link
-          href="https://s681sas.storage.yandex.net/rdisk/cdc76f027e504ecef237e80c338b1f07fe4eb7ff815d4f01b69886a954be330b/613a7599/CTSy-P8jsmItOMbmxL62Ova9_P2uhGDjmu3AvyDyzrcorwQLEr_jK4_123HpNTrUNsVf349idRfkXdXTG1PhJg==?uid=0&filename=RRNar%20kataloq.pdf&disposition=attachment&hash=FUixDddvC8gNRDbWsyekdLcTyP9HNguAfieihXG2iFd3claKkLoPKrCYsrtPlPR%2Bq/J6bpmRyOJonT3VoXnDag%3D%3D&limit=0&content_type=application%2Fpdf&owner_uid=476199404&fsize=35040627&hid=d060e5da158b999f06255bbb451c9fe4&media_type=document&tknv=v2&rtoken=QcKe2Rswbdlt&force_default=no&ycrid=na-85f083efdfaec1825fadcc223c046ea2-downloader21f&ts=5cb9644e5d840&s=002eeb7b465468a8596b0569b6a4d1ab6c9408a528ebae0752a998a3bb8b4bcb&pb=U2FsdGVkX1_wZh7642Y1Lo_lNNthzbdY6G045kIFgFBc1I64tLmfN5yr7ZHefISvoOUzOthx_vPghBDIf8t8pzil5smJpk-aidcJsyEvB30"
+          href="https://docviewer.yandex.com/view/476199404/?page=1&*=fkpuitGccSokr8dFOdOt5W%2FkZC97InVybCI6InlhLWRpc2stcHVibGljOi8vRlVpeERkZHZDOGdOUkRiV3N5ZWtkTGNUeVA5SE5ndUFmaWVpaFhHMmlGZDNjbGFLa0xvUEtyQ1lzcnRQbFBSK3EvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiUlJOYXIga2F0YWxvcS5wZGYiLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjQ3NjE5OTQwNCIsInRzIjoxNjMxMzQ5NTIwNTU1LCJ5dSI6IjE0NzcwNDYxNzE2MTcwNDk0MTcifQ%3D%3D"
           target="_blank"
         >
           <DownloadOutlined style={{ marginRight: 7 }} />

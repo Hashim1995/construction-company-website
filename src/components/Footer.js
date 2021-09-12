@@ -92,7 +92,9 @@ const Footer = () => {
               <p>
                 <MailOutlined />
                 <b>E-mail : </b>{" "}
-                <a href="mailto:contact@company.com">rrnarqrup@gmail.com</a>
+                <a href="mailto:rrnarqrupmmc@gmail.com">
+                  rrnarqrupmmc@gmail.com
+                </a>
               </p>
               <ul>
                 <li>
