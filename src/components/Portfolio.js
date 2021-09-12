@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Divider, Tabs, Row, Col, Spin, Typography, Button } from "antd";
+import { Divider, Tabs, Row, Col, Spin, Typography } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import ImageGallery from "react-image-gallery";
 import { commerce } from "../lib/commerce";

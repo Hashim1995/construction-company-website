@@ -3,7 +3,6 @@ import { Row, Col, Divider } from "antd";
 import { logoImg, SocialMediaImg } from "../assets/img/imageList";
 import {
   DoubleRightOutlined,
-  EnvironmentOutlined,
   PhoneOutlined,
   WhatsAppOutlined,
   MailOutlined,
@@ -72,11 +71,11 @@ const Footer = () => {
             </div>
             <div className="footerRight">
               <h5>{t("footer-contact-header")}</h5>
-              <p>
+              {/* <p>
                 <EnvironmentOutlined />
                 <b>{t("footer-contact-address")} : </b> 245a, Rashid Behbudov
                 st, Baku, Azerbaijan
-              </p>
+              </p> */}
               <p>
                 <PhoneOutlined />
                 <b>{t("footer-contact-phone")} : </b>{" "}
@@ -98,22 +97,23 @@ const Footer = () => {
               </p>
               <ul>
                 <li>
-                  <a target="_blank" href="google.com">
+                  <a target="_blank" rel="noreferrer" href="google.com">
                     <img src={SocialMediaImg[0]} alt="facebook" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="google.com">
+                  rel="noreferrer"
+                  <a target="_blank" rel="noreferrer" href="google.com">
                     <img src={SocialMediaImg[1]} alt="instagram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="google.com">
+                  <a target="_blank" rel="noreferrer" href="google.com">
                     <img src={SocialMediaImg[2]} alt="facebook" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="google.com">
+                  <a target="_blank" rel="noreferrer" href="google.com">
                     <img src={SocialMediaImg[3]} alt="youtube" />
                   </a>
                 </li>

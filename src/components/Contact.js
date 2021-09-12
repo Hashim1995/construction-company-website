@@ -1,7 +1,6 @@
 import React from "react";
 import { Divider, Row, Col } from "antd";
 import whatsappIcon from "../assets/img/whatsapp.png";
-// import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { SocialMediaImg } from "../assets/img/imageList";
 import {
   EnvironmentOutlined,
@@ -11,15 +10,6 @@ import {
 import { useTranslation } from "react-i18next";
 const Contact = () => {
   const { t } = useTranslation();
-  const mapStyles = {
-    height: "50vh",
-    width: "100%",
-  };
-
-  const defaultCenter = {
-    lat: 40.4093,
-    lng: 49.8671,
-  };
 
   return (
     <div>
@@ -54,20 +44,25 @@ const Contact = () => {
                 </p>
                 <ul>
                   <li>
-                    <a target="_blank" href="#">
+                    <a target="_blank" rel="noreferrer" href="#">
                       <img src={SocialMediaImg[0]} alt="facebook" />
                     </a>
                   </li>
                   <li>
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.instagram.com/rrnarqrup/"
                     >
                       <img src={SocialMediaImg[1]} alt="instagram" />
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href="https://wa.me/+994502507490">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://wa.me/+994502507490"
+                    >
                       <img src={whatsappIcon} alt="whatsapp" />
                     </a>
                   </li>
