@@ -19,7 +19,7 @@ const Partners = () => {
                   <img src={PartnersImg[0]} alt="Partner" />
                 </div>
                 <div className="partners-card-back">
-                  <h4>INVESTMENT PROPERTY</h4>
+                  <h4>Penguin</h4>
                 </div>
               </div>
             </div>
@@ -33,7 +33,7 @@ const Partners = () => {
                   <img src={PartnersImg[1]} alt="Partner" />
                 </div>
                 <div className="partners-card-back">
-                  <h4>REAL ESTATE</h4>
+                  <h4>Sto Pudov</h4>
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ const Partners = () => {
                   <img src={PartnersImg[2]} alt="Partner" />
                 </div>
                 <div className="partners-card-back">
-                  <h4>LUXURY HOLDING</h4>
+                  <h4>CMT</h4>
                 </div>
               </div>
             </div>

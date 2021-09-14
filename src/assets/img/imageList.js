@@ -19,7 +19,7 @@ import doneProject from "./doneProject.svg";
 import planned from "./planned.svg";
 import underConstruction from "./underConstruction.svg";
 import partnerOne from "./partner1.png";
-import partnerTwo from "./partner2.png";
+import partnerTwo from "./partner2.svg";
 import partnerThree from "./partner3.png";
 import partnerFour from "./partner4.png";
 import partnerFive from "./partner5.png";

@@ -79,13 +79,13 @@ const Footer = () => {
               <p>
                 <PhoneOutlined />
                 <b>{t("footer-contact-phone")} : </b>{" "}
-                <a href="tel:+994 55-123-45-67">+994 50 250 74 90</a>
+                <a href="tel:+994 55-123-45-67">+994 50 224 86 37</a>
               </p>
               <p>
                 <WhatsAppOutlined />
                 <b>Whatsapp : </b>{" "}
                 <a
-                  href="https://wa.me/+994502507490"
+                  href="https://wa.me/+994502248637"
                   target="_blank"
                   rel="noreferrer"
                 >

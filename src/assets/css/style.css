@@ -120,17 +120,20 @@ body {
   z-index: 2;
   color: var(--white);
   margin: 2em 0;
+  text-align: left;
 }
 
 .headerCarouselInnerWrap h3 {
   font-size: clamp(1rem, calc(-0.875rem + 3.5vw), 8vw);
   top: 15vh;
   background-color: var(--main-color);
+  opacity: 0.8;
 }
 .headerCarouselInnerWrap h4 {
   font-size: clamp(1rem, calc(-0.875rem + 2.8vw), 8vw);
   top: 35vh;
   background-color: var(--main-color);
+  opacity: 0.8;
 }
 .headerCarouselInnerWrap img {
   object-fit: cover;
@@ -139,6 +142,7 @@ body {
   font-size: clamp(1rem, calc(-0.875rem + 2vw), 8vw);
   top: 50vh;
   background-color: var(--main-color);
+  opacity: 0.8;
 }
 /* CAROUSEL */
 

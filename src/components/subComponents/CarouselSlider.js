@@ -33,7 +33,6 @@ const CarouselSlider = () => {
                 />
                 <h3>{t("header-text-one")}</h3>
                 <h4>{t("header-text-two")}</h4>
-                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -46,7 +45,6 @@ const CarouselSlider = () => {
                 />
                 <h3>{t("header-text-one")}</h3>
                 <h4>{t("header-text-two")}</h4>
-                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -59,7 +57,6 @@ const CarouselSlider = () => {
                 />
                 <h3>{t("header-text-one")}</h3>
                 <h4>{t("header-text-two")}</h4>
-                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -71,7 +68,6 @@ const CarouselSlider = () => {
                 />
                 <h3>{t("header-text-one")}</h3>
                 <h4>{t("header-text-two")}</h4>
-                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
             <div>
@@ -83,7 +79,6 @@ const CarouselSlider = () => {
                 />
                 <h3>{t("header-text-one")}</h3>
                 <h4>{t("header-text-two")}</h4>
-                <h5>{t("header-text-three")}</h5>
               </div>
             </div>
           </Carousel>

@@ -41,14 +41,14 @@ const Stat = () => {
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={48}
+                          end={80}
                           duration={1.5}
                         ></CountUp>
                       ) : (
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={48}
+                          end={80}
                           duration={1.5}
                         ></CountUp>
                       )}
@@ -71,14 +71,14 @@ const Stat = () => {
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={19}
+                          end={2}
                           duration={1}
                         ></CountUp>
                       ) : (
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={48}
+                          end={2}
                           duration={1.5}
                         ></CountUp>
                       )}
@@ -100,14 +100,14 @@ const Stat = () => {
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={62}
+                          end={15}
                           duration={2}
                         ></CountUp>
                       ) : (
                         <CountUp
                           className="statCounter"
                           start={0}
-                          end={48}
+                          end={15}
                           duration={1.5}
                         ></CountUp>
                       )}
