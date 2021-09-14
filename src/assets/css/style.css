@@ -353,7 +353,8 @@ body {
 }
 
 .partners-card-front {
-  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
+  background-color: var(--white);
   color: var(--black);
 }
 .partners-card-front img {

@@ -74,6 +74,28 @@ const CarouselSlider = () => {
               <div className="headerCarouselInnerWrap">
                 <img
                   style={contentStyle}
+                  src={CarouselImg[6]}
+                  alt="carousel  7"
+                />
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+              </div>
+            </div>
+            <div>
+              <div className="headerCarouselInnerWrap">
+                <img
+                  style={contentStyle}
+                  src={CarouselImg[7]}
+                  alt="carousel  8"
+                />
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+              </div>
+            </div>
+            <div>
+              <div className="headerCarouselInnerWrap">
+                <img
+                  style={contentStyle}
                   src={CarouselImg[4]}
                   alt="carousel  5"
                 />
@@ -81,6 +103,18 @@ const CarouselSlider = () => {
                 <h4>{t("header-text-two")}</h4>
               </div>
             </div>
+            <div>
+              <div className="headerCarouselInnerWrap">
+                <img
+                  style={contentStyle}
+                  src={CarouselImg[5]}
+                  alt="carousel  6"
+                />
+                <h3>{t("header-text-one")}</h3>
+                <h4>{t("header-text-two")}</h4>
+              </div>
+            </div>
+            
           </Carousel>
         </Col>
       </Row>
