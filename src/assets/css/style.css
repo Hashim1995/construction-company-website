@@ -675,7 +675,7 @@ div.fullscreen
 .image-gallery-icon:hover,
 .image-gallery-icon:active,
 .image-gallery-icon:focus {
-  color: var(--main-color);
+  color: var(--white);
 }
 .image-gallery-thumbnail .image-gallery-thumbnail-image {
   object-fit: cover;
