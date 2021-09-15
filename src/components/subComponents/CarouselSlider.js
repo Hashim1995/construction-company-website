@@ -114,7 +114,6 @@ const CarouselSlider = () => {
                 <h4>{t("header-text-two")}</h4>
               </div>
             </div>
-            
           </Carousel>
         </Col>
       </Row>
