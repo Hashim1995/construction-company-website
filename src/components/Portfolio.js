@@ -24,7 +24,7 @@ const Portfolio = () => {
   const fetchCategories = async () => {
     const { data } = await commerce.categories.list();
 
-    // const categoriesData = [];
+    console.log("CATEGORIES", data);
 
     setCategories(data);
   };
@@ -67,7 +67,7 @@ const Portfolio = () => {
             >
               {categories.map((category) => (
                 <TabPane
-                  tab={category.name}
+                  tab={language === "az" ? category.name : category.description}
                   key={category.slug}
                   onChange={() => {}}
                 >
@@ -102,7 +102,7 @@ const Portfolio = () => {
         </Row>
       </div>
       <div>
-        <Space>
+        <Space direction="vertical">
           <Link
             href="https://docviewer.yandex.com/view/476199404/?page=1&*=fkpuitGccSokr8dFOdOt5W%2FkZC97InVybCI6InlhLWRpc2stcHVibGljOi8vRlVpeERkZHZDOGdOUkRiV3N5ZWtkTGNUeVA5SE5ndUFmaWVpaFhHMmlGZDNjbGFLa0xvUEtyQ1lzcnRQbFBSK3EvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiUlJOYXIga2F0YWxvcS5wZGYiLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjQ3NjE5OTQwNCIsInRzIjoxNjMxMzQ5NTIwNTU1LCJ5dSI6IjE0NzcwNDYxNzE2MTcwNDk0MTcifQ%3D%3D"
             target="_blank"
